@@ -7,20 +7,35 @@
     <link rel="stylesheet" href="./styles/app.css" />
   </head>
   <body>
-    <h1 class="text-2xl bg-teal-200">Hello, World! &#x1F947;</h1>
-    <p class="bg-red-400">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores
-      dolorum dicta itaque cupiditate explicabo nisi perferendis cum, error quae
-      voluptate omnis aspernatur nemo cumque quo odit repellat
-      &#x1F9D1;&#x200D;&#x1F3A8; voluptatem neque blanditiis incidunt, obcaecati
-      aut. Optio aut voluptatibus labore, facilis reprehenderit officiis iure
-      sed, cumque dolorem tempore repellendus sint quos illum adipisci assumenda
-      asperiores? Illum eveniet quis quia, possimus vitae nisi beatae, minus
-      consequatur modi quibusdam eos corrupti illo eligendi aspernatur nam quae
-      velit fugit hic magnam iste, similique libero voluptas quaerat repellat.
-      Labore vitae repellendus odit ea blanditiis temporibus quibusdam.
-      Voluptates earum minima, exercitationem totam eaque temporibus harum
-      placeat veritatis? &#x1F9EE;
-    </p>
+    <div class="mx-auto max-w-screen-xl">
+      <header class="">
+        <div
+          class="upper-nav hidden md:flex md:visible md:bg-gray-700 md:w-full md:h-8 px-4 justify-between"
+        >
+          <div class="upper-nav-left">left</div>
+          <div class="upper-nav-right">right</div>
+        </div>
+        <nav class="flex px-4 py-5 bg-[#d5d5d5] h-full w-full justify-between">
+          <div class="right flex space-x-4">
+            <button class="md:hidden">
+              <span
+                ><img class="h-8 w-8" src="./img/left-menu-bar.svg" alt=""
+              /></span>
+            </button>
+            <a href="">
+              <div class="">
+                <img class="h-10" src="./img/main-logo - real.svg" alt="" />
+              </div>
+            </a>
+          </div>
+          <button class="ml-auto">
+            <span
+              ><img class="h-8 w-8" src="./img/right-menu-bar.svg" alt=""
+            /></span>
+          </button>
+          <div></div>
+        </nav>
+      </header>
+    </div>
   </body>
 </html>
