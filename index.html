@@ -15,7 +15,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="text-[#21252] font-normal">
     <div class="">
       <!-- header -->
       <header class="">
@@ -27,7 +27,9 @@
           <div class="upper-nav-right">right</div>
         </div>
         <!-- actual nav -->
-        <nav class="flex px-4 py-5 bg-[#d5d5d5] h-full w-full justify-between">
+        <nav
+          class="flex px-4 py-5 bg-[#d5d5d5] h-full w-full justify-between sticky top-0 z-10"
+        >
           <div class="right flex space-x-4">
             <button class="md:hidden">
               <span
@@ -378,6 +380,63 @@
               >Research Units</span
             >
           </div>
+        </div>
+      </section>
+
+      <!-- faq section -->
+      <section class="px-4 py-12">
+        <div class="">
+          <div class="mb-8">
+            <h2 class="text-4xl text-[#a18a4d] font-light leading-4">
+              Frequently asked questions
+            </h2>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex gap-8 border-b-2 border-solid border-[#ccc] mb-9">
+              <li class="mb-3">
+                <a class="active text-lg font-semibold py-3" id="profile-tab-1"
+                  >International Students</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  class="text-[#999] text-lg font-semibold py-3"
+                  id="profile-tab-2"
+                  >Prospective Students</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  class="text-[#999] text-lg font-semibold py-3"
+                  id="profile-tab-3"
+                  >Professionals</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  class="text-[#999] text-lg font-semibold py-3"
+                  id="profile-tab-4"
+                  >Alumni</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  class="text-[#999] text-lg font-semibold py-3"
+                  id="profile-tab-5"
+                  >U.Porto Students</a
+                >
+              </li>
+            </ul>
+          </div>
+          <select
+            class="block px-8 py-3 w-full border-2 border-solid border-[#333] text-xl lg:hidden"
+          >
+            <option value="profile0">International Students</option>
+            <option value="profile1">Prospective Students</option>
+            <option value="profile2">Professionals</option>
+            <option value="profile3">Alumni</option>
+            <option value="profile4">U.Porto Students</option>
+          </select>
         </div>
       </section>
     </div>
