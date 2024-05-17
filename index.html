@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gateClone</title>
     <link rel="stylesheet" href="./styles/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
   </head>
   <body>
-    <div class="mx-auto max-w-screen-xl">
+    <div class="">
       <header class="">
         <div
           class="upper-nav hidden md:flex md:visible md:bg-gray-700 md:w-full md:h-8 px-4 justify-between"
@@ -28,14 +37,64 @@
               </div>
             </a>
           </div>
-          <button class="ml-auto">
+          <div class="menu-items invisible md:visible md:flex">
+            <ul class="flex space-x-6">
+              <li>study</li>
+              <li>Researxh</li>
+              <li>Innovate</li>
+              <li>live</li>
+              <li>explore</li>
+            </ul>
+            <input
+              id="searchInput"
+              required
+              name="query"
+              type="text"
+              placeholder="Search"
+              title="Search"
+              class="border-b-2 border-black ml-4 bg-opacity-0"
+            />
+          </div>
+          <button class="ml-auto md:hidden">
             <span
               ><img class="h-8 w-8" src="./img/right-menu-bar.svg" alt=""
             /></span>
           </button>
-          <div></div>
         </nav>
       </header>
+      <!-- main section -->
+      <section class="w-full relative">
+        <!-- image div -->
+        <img
+          class="h-[60vh] w-full bg-cover"
+          src="./img/main-image-1.jpeg"
+          alt=""
+        />
+        <!-- directions -->
+        <div class="absolute top-[50%] translate-y-[-50%] right-0">
+          <span class="material-symbols-outlined bg-[#A18A4D]">
+            chevron_right
+          </span>
+        </div>
+        <div class="absolute top-[50%] translate-y-[-50%] left-0">
+          <span class="material-symbols-outlined bg-[#A18A4D]">
+            chevron_left
+          </span>
+        </div>
+
+        <div class="w-full bg-black bg-opacity-70 absolute bottom-0 px-4 pb-12">
+          <h2 class="text-gray-300 font-semibold py-4 text-xl">
+            we are in the world's top
+          </h2>
+          <p class="hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            tempora consequatur alias dolor repellat, a molestiae illo unde
+            laborum aliquam voluptatum repudiandae atque officia? Voluptate
+            aliquam aperiam animi sit quibusdam.
+          </p>
+          <button class="px-2 py-1 bg-[#A18A4D] font-bold">See More</button>
+        </div>
+      </section>
     </div>
   </body>
 </html>
