@@ -67,6 +67,7 @@
           </button>
         </nav>
       </header>
+
       <!-- main section -->
       <section class="w-full relative">
         <!-- image div -->
@@ -112,9 +113,9 @@
 
       <!-- news section -->
       <section class="news-slide">
-        <div class="py-12 bg-[#F2F2F2] lg:p-20">
+        <div class="py-12 bg-[#F2F2F2] lg:p-20 xl:px-28">
           <!-- news title -->
-          <div class="news-title pb-4 px-4 flex justify-between items-center">
+          <div class="news-title pb-12 px-4 flex justify-between items-center">
             <h2 class="text-[#a18a4d] text-5xl font-light">News</h2>
             <p class="text-[#a18a4d] font-semibold">
               <a href="" class="flex items-center justify-center">
@@ -161,7 +162,7 @@
               </div>
             </div>
 
-            <!-- Card 1 -->
+            <!-- Card 2 -->
             <div class="bg-white grid grid-rows-2">
               <!-- Card body -->
               <div class="p-4">
@@ -193,7 +194,7 @@
               </div>
             </div>
 
-            <!-- Card 1 -->
+            <!-- Card 3 -->
             <div class="bg-white grid grid-rows-2">
               <!-- Card body -->
               <div class="p-4">
@@ -247,18 +248,16 @@
 
       <!-- first division -->
       <section
-        class="py-12 xl:py-28 px-4 xl:grid xl:grid-cols-2 gap-8 border-b-4 border-gray-200"
+        class="py-12 xl:py-28 px-4 xl:grid xl:grid-cols-2 gap-8 border-b-4 border-gray-200 xl:px-28"
       >
         <!-- left part -->
         <div class="relative py-4 xl:flex xl:justify-between">
           <h2
-            class="text-[#a18a4d] text-4xl tracking-wider xl:text-wrap xl:pl-20 xl:text-5xl xl:font-extralight"
+            class="text-[#a18a4d] text-4xl tracking-wider xl:text-wrap xl:text-5xl xl:font-extralight"
           >
-            We are a
+            We are a University
             <br class="hidden xl:block" />
-            University of
-            <br class="hidden xl:block" />
-            Excellence!
+            of Excellence!
           </h2>
           <img
             class="absolute right-0 hidden xl:block xl:w-[30%]"
@@ -300,7 +299,7 @@
       </section>
 
       <!-- Reasearch section -->
-      <section class="py-12 px-4 xl:px-12 xl:py-24">
+      <section class="py-12 px-4 xl:px-28 xl:py-24">
         <div class="xl:py-8">
           <h2 class="text-[#a18a4d] text-4xl xl:text-6xl font-light leading-5">
             Research
@@ -335,7 +334,9 @@
       </section>
 
       <!-- mini description section -->
-      <section class="bg-[#a18a4d] text-white py-16 text-center space-y-4 px-4">
+      <section
+        class="bg-[#a18a4d] text-white py-16 text-center space-y-4 px-4 xl:px-28"
+      >
         <div class="flex justify-center relative">
           <svg
             viewBox="0 0 512 512"
@@ -384,10 +385,12 @@
       </section>
 
       <!-- faq section -->
-      <section class="px-4 py-12">
+      <section class="bg-[#f2f2f2] py-12 px-4 xl:px-28 xl:py-24">
         <div class="">
-          <div class="mb-8">
-            <h2 class="text-4xl text-[#a18a4d] font-light leading-4">
+          <div class="mb-8 xl:mb-12">
+            <h2
+              class="text-3xl text-[#a18a4d] font-light leading-4 xl:text-4xl xl:leading-5 xl:font-light"
+            >
               Frequently asked questions
             </h2>
           </div>
@@ -429,7 +432,7 @@
             </ul>
           </div>
           <select
-            class="block px-8 py-3 w-full border-2 border-solid border-[#333] text-xl lg:hidden"
+            class="block px-8 py-3 w-full border-2 border-solid border-[#333] text-xl lg:hidden mb-4"
           >
             <option value="profile0">International Students</option>
             <option value="profile1">Prospective Students</option>
@@ -437,6 +440,56 @@
             <option value="profile3">Alumni</option>
             <option value="profile4">U.Porto Students</option>
           </select>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div class="order-2 sm:order-1 pr-12 relative">
+            <h2 class="text-2xl font-semibold mb-4 xl:text-4xl">
+              International Students
+            </h2>
+            <p class="text-base leading-5 mb-4 font-light xl:text-xl">
+              Welcome! In this area you will find the answers you need to start
+              and make the most of your experience at the University. We hope to
+              help you... and welcome you soon!
+            </p>
+            <p class="text-[#a18a4d] font-semibold mt-2 xl:mt-8">
+              <a href="" class="flex">
+                See More
+                <span
+                  class="material-symbols-outlined rounded-full text-white bg-[#a18a4d] ml-1"
+                >
+                  chevron_right
+                </span>
+              </a>
+            </p>
+            <!-- navigation -->
+            <div
+              class="grid grid-cols-2 gap-3 px-4 py-6 absolute bottom-0 xl:p-0"
+            >
+              <div class="">
+                <span
+                  class="material-symbols-outlined bg-[#999999] px-3 py-3 text-white"
+                >
+                  chevron_left
+                </span>
+              </div>
+              <div class="">
+                <span
+                  class="material-symbols-outlined bg-[#A18A4D] px-3 py-3 text-white"
+                >
+                  chevron_right
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 sm:order-2 mb-4">
+            <img
+              style="width: 100%"
+              alt="Image International Students"
+              data-cfsrc="/portal/media/images/gate-estudantes-internacionais.format-jpeg.jpg"
+              data-cfstyle="width: 100%;"
+              src="https://www.up.pt/portal/media/images/gate-estudantes-internacionais.format-jpeg.jpg"
+            />
+          </div>
         </div>
       </section>
     </div>
